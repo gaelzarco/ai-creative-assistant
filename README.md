@@ -16,21 +16,21 @@ Streamline the process of creating comprehensive briefs for your agency using po
 
 ## Acknowledgements
 
- - [Readme](https://readme.so/editor)
+ [Readme](https://readme.so/editor)
  
- - [Shields](https://shields.io/)
+ [Shields](https://shields.io/)
 
 
 ## Authors
 
-- [Gael Zarco](https://github.com/gaelzarco)
+[Gael Zarco](https://github.com/gaelzarco)
  
-- ...
+...
 
 
 ## Roadmap
 
-- Allow users to upload an image of company logo and attach it to brief.
+Allow users to upload an image of company logo and attach it to brief.
 
 #### Submit a paragraph, receive a brief, revise, save.
 #### It's really that simple
