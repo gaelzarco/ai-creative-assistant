@@ -15,9 +15,6 @@ Streamline the process of creating comprehensive briefs for your agency using po
  
 #### Submit a paragraph, receive a brief, revise, save.
 #### It's really that simple
- 
- </div>
-
 
 #### Acknowledgements
 
@@ -36,3 +33,5 @@ Streamline the process of creating comprehensive briefs for your agency using po
 #### Roadmap
 
 Allow users to upload an image of company logo and attach it to brief.
+
+</div>
