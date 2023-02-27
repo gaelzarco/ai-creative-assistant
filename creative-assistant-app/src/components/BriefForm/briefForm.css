@@ -1,0 +1,23 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+label{
+    margin: 5px 0;
+}
+
+select{
+    width: 50%;
+    margin: 5px 0;
+
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0 0 10px;
+}
