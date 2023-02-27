@@ -4,43 +4,32 @@ import BriefForm from '../BriefForm/BriefForm'
 import SecondaryTittle from '../SecondaryTittle/SecondaryTittle'
 
 const Main = () => {
-  const [parragraphData, setParragraphData] = useState('')
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const [formData, setFormData] = useState({})
+  const [companyName, setCompanyName] = useState('');
+  const [productIndustry, setProductIndustry] = useState('');
 
-  function handleSelectChange(event) {
-    const selected = event.target.selectedOptions;
-    const options = [];
-    for (let i = 0; i < selected.length; i++) {
-      const key = selected[i].getAttribute('data-name');
-      const value = selected[i].value;
-      options.push({ [key]: value });
-    }
-    setSelectedOptions(options);
+ function captureVariables(event) {
+    const textareaValue = event.target.value;
+    const companyNameRegex = /The name of our company is (.+?) and it specializes in/;
+    const productIndustryRegex = /and it specializes in (.+?)\./;
+    const newCompanyName = textareaValue.match(companyNameRegex)?.[1] || '';
+    const newProductIndustry = textareaValue.match(productIndustryRegex)?.[1] || '';
+    setCompanyName(newCompanyName);
+    setProductIndustry(newProductIndustry);
   }
 
-function handleParragraphChange(evt) {
-  const value = evt.target.value;
-  setParragraphData(value)
-}
-
 const saveData = () =>{
-  setFormData({
-    briefContext: parragraphData,
-    selectedOptions: selectedOptions
-  })
-
+  console.log(companyName)
+  console.log(productIndustry)
 }
 
   useEffect(()=>{
-  }, [formData])
+  }, [])
 
-console.log(formData)
   return (
     <main className='main-container'>
         <div className="letsGetToTheAction-container">
         <SecondaryTittle text={'Lets get to the action!'}/>
-        <BriefForm fromData={formData} setFormData={setFormData} handleParragraphChange={handleParragraphChange} handleSelectChange={handleSelectChange} saveData={saveData}/>
+        <BriefForm  saveData={saveData} captureVariables={captureVariables}/>
         </div>
     </main>
   )
