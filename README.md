@@ -6,6 +6,8 @@
 OpenAI ✧ LabLabAI |![GitHub contributors](https://img.shields.io/github/contributors/gaelzarco/ai-hackathon?style=for-the-badge) | ![GitHub forks](https://img.shields.io/github/forks/gaelzarco/ai-hackathon?style=for-the-badge) |![GitHub last commit](https://img.shields.io/github/last-commit/gaelzarco/ai-hackathon?style=for-the-badge)
 :-:|:-:|:-:|:-:
 
+ </div>
+
 #### AI Creative Assistant
 Streamline the process of creating comprehensive briefs for your agency using powerful AI technologies 📃
 
@@ -23,10 +25,9 @@ Streamline the process of creating comprehensive briefs for your agency using po
 #### Authors
 
 [Gael Zarco](https://github.com/gaelzarco)
+
 [Juan Jacobo](https://github.com/juanjacoboviera)
 
 #### Roadmap
 
 Allow users to upload an image of company logo and attach it to brief.
- 
- </div>
