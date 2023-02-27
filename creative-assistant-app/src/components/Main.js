@@ -1,8 +1,11 @@
 import React from 'react'
+import BriefForm from './BriefForm'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <main>
+        <BriefForm/>
+    </main>
   )
 }
 
