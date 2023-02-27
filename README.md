@@ -23,7 +23,7 @@ Streamline the process of creating comprehensive briefs for your agency using po
 #### Authors
 
 [Gael Zarco](https://github.com/gaelzarco)
-
+[Juan Jacobo](https://github.com/juanjacoboviera)
 
 #### Roadmap
 
