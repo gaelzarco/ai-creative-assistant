@@ -1,5 +1,38 @@
 header{
+  position: relative;
+}
+
+.banner-container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: aquamarine;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+}
+
+.txt-container{
+    width: 80%;
+}
+
+.banner-tittle{
+    font-size: 2.5em;
+    color:  #2d1e73;
+}
+
+.txt-container p {
+    padding-top: 10px;
+    color:  #4d4c4c;
+    font-weight: 300;
 }
