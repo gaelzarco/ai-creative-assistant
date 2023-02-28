@@ -5,7 +5,7 @@ import Button from '../button/Button'
 
 const BriefTemplate = () => {
   return (
-    <div className="yourBriefTemplate-container">
+    <div id='section3' className="yourBriefTemplate-container">
         <SecondaryTittle text='Your Brief Template'/>
           <div className="yourBriefTemplate-page">
             <form className='YourBriefTemplate-form' action="submit">
