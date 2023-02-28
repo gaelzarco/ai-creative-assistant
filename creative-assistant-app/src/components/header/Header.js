@@ -14,7 +14,7 @@ const Header = () => {
           </div>
         </div>
         <div className="right-container">
-          <img src={headerImg} width='50%' alt="" />
+          <img src={headerImg} height='100%' alt="" />
         </div>
       </div>
     </header>
