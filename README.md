@@ -28,7 +28,11 @@ Streamline the process of creating comprehensive briefs for your agency using po
 
 [Juan Jacobo](https://github.com/juanjacoboviera)
 
-[Mateen Umair](https://github.com/m-umairali)
+[Muhammed Umair](https://github.com/m-umairali)
+
+[Mateen](https://github.com/mateen1993)
+
+[Obidoyin Obaloluwa](https://github.com/obaloluwaobi)
 
 #### Roadmap
 
