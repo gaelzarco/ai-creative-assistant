@@ -7,6 +7,7 @@ import { faEdit} from '@fortawesome/free-solid-svg-icons';
 import { faArchive} from '@fortawesome/free-solid-svg-icons';
 import { faDownload} from '@fortawesome/free-solid-svg-icons';
 import { faHandPaper} from '@fortawesome/free-solid-svg-icons';
+import graphicElement from '../../assets/graphicelement.png'
 
 const Main = () => {
   const [companyName, setCompanyName] = useState('');
@@ -58,8 +59,13 @@ const saveData = () =>{
           </div>
         </div>
         <div className="letsGetToTheAction-container">
-        <SecondaryTittle text='Lets get to the action!'/>
-        <BriefForm  saveData={saveData} captureVariables={captureVariables}/>
+          <div className="left-content">
+            <SecondaryTittle text='Lets get to the action!'/>
+            <BriefForm  saveData={saveData} captureVariables={captureVariables}/>
+          </div>
+          <div className="right-content">
+            <img src={graphicElement} width="100%" alt="Brief document" />
+          </div>
         </div>
     </main>
   )

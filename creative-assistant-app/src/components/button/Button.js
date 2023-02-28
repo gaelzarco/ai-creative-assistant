@@ -1,12 +1,9 @@
 import React from 'react'
 import './button.css'
 
-const Button = ({text, saveData}) => {
+const Button = (props) => {
   return (
-   <button onClick={(e)=>{
-    e.preventDefault()
-    saveData()
-   }} type='sumbit'>{text}</button>
+   <button style={props.align} onClick={props.onClick} type='sumbit'>{props.children}</button>
   )
 }
 
