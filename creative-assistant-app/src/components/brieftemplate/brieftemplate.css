@@ -1,0 +1,30 @@
+.yourBriefTemplate-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgb(235, 235, 235);
+    margin-left: -50px;
+    margin-right: -50px;
+    padding: 50px 0;
+}
+
+.yourBriefTemplate-page{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.YourBriefTemplate-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px auto;
+    align-items: start;
+    width: 80%;
+
+}
