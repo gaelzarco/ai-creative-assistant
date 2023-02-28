@@ -1,3 +1,23 @@
 .main-container{
-    margin: 10px 50px;
+    margin: 30px 50px;
+}
+
+.instructions-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+
+.instruction-card{
+    width: 20%;
+    margin: 0 25px;
+}
+
+.instruction-card h3{
+    margin: 15px 0 10px 0;
+}
+
+.instruction-card p{
+    font-size: 1em;
 }
