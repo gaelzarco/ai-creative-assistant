@@ -28,6 +28,8 @@ Streamline the process of creating comprehensive briefs for your agency using po
 
 [Juan Jacobo](https://github.com/juanjacoboviera)
 
+[Mateen Umair](https://github.com/m-umairali)
+
 #### Roadmap
 
 Allow users to upload an image of company logo and attach it to brief.
