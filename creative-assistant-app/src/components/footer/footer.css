@@ -1,0 +1,38 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #2d1e73;
+    height: 200px;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    margin: 30px 10px 30px 10px;
+}
+
+#txt-small--footer{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+#team-text{
+    color: white;
+}
+
+.lablabLogo{
+    margin-left: 20px;
+}
