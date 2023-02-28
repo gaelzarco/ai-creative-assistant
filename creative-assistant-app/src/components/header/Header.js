@@ -15,7 +15,7 @@ const Header = () => {
           <p>Introducing Briefo, the ultimate solution to generate creative brief templates in seconds! With just a few clicks, you can provide the campaign context and sections, and Briefo will take care of the rest, saving you valuable hours. You're going to love it! Try Briefo today!</p>
           <Button align={{alignSelf: 'start'}}>Try it now</Button>
           <p id='txt-small'>DEVELOPED BY:</p>
-          <img src={omniLogo} width="50px" alt="" />
+          <img src={omniLogo} width="50px" alt="Omni Team Logo" />
           </div>
         </div>
         <div className="right-container">

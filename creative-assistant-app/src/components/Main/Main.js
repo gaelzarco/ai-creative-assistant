@@ -8,6 +8,7 @@ import { faArchive} from '@fortawesome/free-solid-svg-icons';
 import { faDownload} from '@fortawesome/free-solid-svg-icons';
 import { faHandPaper} from '@fortawesome/free-solid-svg-icons';
 import graphicElement from '../../assets/graphicelement.png'
+import BriefTemplate from '../brieftemplate/BriefTemplate';
 
 const Main = () => {
   const [companyName, setCompanyName] = useState('');
@@ -67,6 +68,7 @@ const saveData = () =>{
             <img src={graphicElement} width="100%" alt="Brief document" />
           </div>
         </div>
+        <BriefTemplate/>
     </main>
   )
 }
