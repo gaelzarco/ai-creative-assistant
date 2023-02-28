@@ -5,7 +5,7 @@ import briefoLogo from '../../assets/briefoLogo.png'
 const Nav = () => {
   return (
     <nav>
-      <img src={briefoLogo} width='50px' alt="Briefo Logo" />
+      <img src={briefoLogo} width='80px' alt="Briefo Logo" />
         <ul>
             <li>Home</li>
         </ul>
