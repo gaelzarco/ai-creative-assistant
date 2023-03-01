@@ -71,7 +71,7 @@ const saveData = () =>{
             <img src={graphicElement} width="100%" alt="Brief document" />
           </div>
         </div>
-       {loadedBriefOutput == true ?  <BriefTemplate/> : null}
+       {loadedBriefOutput === true ?  <BriefTemplate/> : null}
     </main>
   )
 }
