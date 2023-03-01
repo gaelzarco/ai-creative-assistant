@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Define a route for the home page
 # @app.route('/')
