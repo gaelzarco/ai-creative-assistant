@@ -17,8 +17,8 @@ footer{
 .footer-container2{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin: 30px 10px 30px 10px;
 }
 

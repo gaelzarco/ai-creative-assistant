@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, request, send_from_directory
 from dotenv import load_dotenv
 import openai
 from docx import Document
@@ -12,12 +12,9 @@ app = Flask(__name__)
 load_dotenv()
 openai.api_key = os.environ.get('OAI_SECRET_KEY')
 
-# Define a route for the home page
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
-
-
+@app.route('/', methods=['GET'])
+def hello():
+    return '<h1>Hello World</h1>'
 
 @app.route('/process', methods=['POST'])
 def process():
@@ -26,7 +23,7 @@ def process():
 
     # Add predefined text
     predefined_text = """  
-    Using the text before this sentence, I want you to generate a marketing brief, seperated into these topics: Background, Objective, Target Audience, and Brand Guidelines. Separate each topic with an empty line and do not include empty lines anywhere else. Be as thorough as possible and include as much information as possible. Prioritize company growth and expansion. Make sure all topics are covered.
+    Using the text before this sentence, I want you to generate a marketing brief, seperated into these topics: Background, Objective, Target Audience, and Brand Guidelines. Separate each topic with an empty line and do not include empty lines anywhere else. Be as thorough as possible and include as much information as possible. Make sure all responses are complete sentences and include atleast 4 sentences for each topic.
       """
     combined_text = predefined_text + user_text
 
@@ -40,8 +37,6 @@ def process():
         stop=None
     )
     output_text = response.choices[0].text
-
-    print(output_text)
 
     # Extract relevant sections from output
     background_text = ""
@@ -106,6 +101,3 @@ def download():
         return send_from_directory('./', 'output.docx', as_attachment=True)
     except Exception as e:
         return str(e)
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
