@@ -12,6 +12,10 @@ app = Flask(__name__)
 load_dotenv()
 openai.api_key = os.environ.get('OAI_SECRET_KEY')
 
+@app.route('/', methods=['GET'])
+def hello():
+    return '<h1>Hello World</h1>'
+
 @app.route('/process', methods=['POST'])
 def process():
     # Get user input text
@@ -97,6 +101,3 @@ def download():
         return send_from_directory('./', 'output.docx', as_attachment=True)
     except Exception as e:
         return str(e)
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
