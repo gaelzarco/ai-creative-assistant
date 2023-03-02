@@ -9,7 +9,6 @@ import { faDownload} from '@fortawesome/free-solid-svg-icons';
 import { faHandPaper} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import graphicElement from '../../assets/graphicelement.png'
-import BriefTemplate from '../brieftemplate/BriefTemplate';
 
 const Main = () => {
   const [companyName, setCompanyName] = useState('');
@@ -30,6 +29,7 @@ const saveData = () =>{
   console.log(companyName)
   console.log(productIndustry)
   setLoadedBriefOutput(true)
+  console.log(loadedBriefOutput)
 }
 
   useEffect(()=>{
@@ -42,7 +42,7 @@ const saveData = () =>{
           <div className="instructions-container">
             <div className="instruction-card">
               <FontAwesomeIcon icon={faArchive} style={{color: '#ac5eec'}} />
-                <h3>choose sections for template</h3>
+                <h3>Choose sections for template</h3>
                 <p>Choose the neccessary sections that you would like to include in your template</p>
               </div>
             <div className="instruction-card">
@@ -68,10 +68,9 @@ const saveData = () =>{
             <BriefForm  saveData={saveData} captureVariables={captureVariables}/>
           </div>
           <div className="right-content">
-            <img src={graphicElement} width="100%" alt="Brief document" />
+            <img src={graphicElement}  alt="Brief document" />
           </div>
         </div>
-       {loadedBriefOutput === true ?  <BriefTemplate/> : null}
     </main>
   )
 }

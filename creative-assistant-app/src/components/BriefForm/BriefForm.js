@@ -10,7 +10,6 @@ const BriefForm = () => {
     text: ''
   })
   const [ brief, setBrief ] = useState(null)
-  // const [ displayTemplate, setDisplayTemplate ] = useState(false)
   const [ loader, setLoader ] = useState(false)
 
   useEffect(() => {
@@ -49,7 +48,7 @@ const BriefForm = () => {
   return (
     <>
       <form className='form-container' onSubmit={handleSubmit}>
-        <label htmlFor="briefContext">Write a parragraph describing your campaign</label>
+        <label htmlFor="briefContext">Write a paragraph describing your campaign</label>
         <textarea
           name="briefContext"
           id="briefContext"
@@ -70,9 +69,7 @@ const BriefForm = () => {
 
       {loader === false && brief !== null ? (
         <BriefTemplate props={brief} />
-      ) : (
-        <p>Brief will be generated here!</p>
-      ) }
+      ) : null}
     </>
   )
 }

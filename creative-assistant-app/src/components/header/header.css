@@ -12,7 +12,7 @@ header{
     position: relative;;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     z-index: 1;
 }
@@ -43,6 +43,11 @@ header{
     padding-top: 10px;
     color:  #4d4c4c;
     font-weight: 300;
+}
+
+.txt-container a {
+    color: white;
+    text-decoration: none;
 }
 
 #txt-small{

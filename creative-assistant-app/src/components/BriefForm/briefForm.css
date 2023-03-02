@@ -17,7 +17,7 @@ select{
 textarea{
     width: 100%;
     resize: none;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px 0 0 10px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 0 0 10px;
 }

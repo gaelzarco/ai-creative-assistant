@@ -23,12 +23,23 @@
 }
 
 .letsGetToTheAction-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 100px 0;
+    display: inline-flex;
+    align-content: space-between;
+    /* grid-template-columns: 2fr 1fr; */
+    /* margin: 100px 0; */
+}
+
+.left-content {
+    width: 80vw;
 }
 
 .right-content{
-    width: 60%;
+    /* position: absolute; */
+    /* right: 0; */
+    width: 10%;
+}
+
+.right-content img {
+    width: 230px;
 }
 

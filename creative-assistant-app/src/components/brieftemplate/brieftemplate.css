@@ -1,4 +1,5 @@
 .yourBriefTemplate-container{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +9,7 @@
     margin-left: -50px;
     margin-right: -50px;
     padding: 50px 0;
+    width: 100vw;
 }
 
 .yourBriefTemplate-page{
@@ -24,7 +26,7 @@
     flex-direction: column;
     padding: 20px;
     margin: 30px auto;
-    align-items: start;
+    align-items: flex-start;
     width: 80%;
 
 }
