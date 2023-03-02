@@ -34,14 +34,11 @@ const BriefForm = () => {
     const data = await res.json()
 
     if (res.status === 200) {
-      console.log(data)
       setBrief(data)
       setLoader(false)
-      console.log(loader)
     } else {
       console.log('Something went wrong...')
       setLoader(false)
-      console.log(loader)
     }
   }
 
