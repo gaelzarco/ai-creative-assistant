@@ -12,13 +12,6 @@ app = Flask(__name__)
 load_dotenv()
 openai.api_key = os.environ.get('OAI_SECRET_KEY')
 
-# Define a route for the home page
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
-
-
-
 @app.route('/process', methods=['POST'])
 def process():
     # Get user input text
@@ -40,8 +33,6 @@ def process():
         stop=None
     )
     output_text = response.choices[0].text
-
-    # print(output_text)
 
     # Extract relevant sections from output
     background_text = ""
