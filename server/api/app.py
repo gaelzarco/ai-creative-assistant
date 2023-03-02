@@ -1,4 +1,5 @@
 from flask import Flask, request, send_from_directory
+from flask_cors import CORS, cross_origin
 from dotenv import load_dotenv
 import openai
 from docx import Document
@@ -7,16 +8,20 @@ import json
 import os
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Set up OpenAI API credentials
 load_dotenv()
 openai.api_key = os.environ.get('OAI_SECRET_KEY')
 
 @app.route('/', methods=['GET'])
+@cross_origin()
 def hello():
-    return '<h1>Hello World</h1>'
+    return '<h1>API</h1>'
 
 @app.route('/process', methods=['POST'])
+@cross_origin()
 def process():
     # Get user input text
     user_text = request.form['user_text']
@@ -62,6 +67,7 @@ def process():
     )
 
 @app.route('/download', methods=[ 'POST' ])
+@cross_origin()
 def download():
     background_text = request.form['background']
     objective_text = request.form['objective']
