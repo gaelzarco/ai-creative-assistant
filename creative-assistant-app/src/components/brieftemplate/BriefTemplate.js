@@ -32,7 +32,7 @@ const BriefTemplate = ({ props }) => {
     formData.append('brand_guidelines', input.brandGuidelinesInput)
     console.log(formData)
 
-    const res = await fetch('/download', {
+    const res = await fetch('https://ai-creative-assistant-server-git-fullstack-gaelzarco.vercel.app/download', {
       method: 'POST',
       body: formData
     })

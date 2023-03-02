@@ -26,7 +26,7 @@ const BriefForm = () => {
     formData.append('user_text', formInput.text)
     console.log(formData)
 
-    const res = await fetch('/process', {
+    const res = await fetch('https://ai-creative-assistant-server-git-fullstack-gaelzarco.vercel.app/process', {
       method: 'POST',
       body: formData
     })
