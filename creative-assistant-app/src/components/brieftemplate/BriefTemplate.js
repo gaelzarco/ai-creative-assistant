@@ -33,7 +33,7 @@ const BriefTemplate = ({ props }) => {
 
     const route = {
       dev: '/download',
-      production: 'https://ai-creative-assistant-server.vercel.app/download'
+      production: 'https://ai-creative-assistant-server-git-fullstack-gaelzarco.vercel.app/download'
     }
 
     const res = await fetch(route.production, {
