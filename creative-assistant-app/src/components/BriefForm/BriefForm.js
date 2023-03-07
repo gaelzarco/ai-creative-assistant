@@ -23,7 +23,12 @@ const BriefForm = () => {
     let formData = new FormData()
     formData.append('user_text', formInput.text)
 
-    const res = await fetch('https://ai-creative-assistant-server.vercel.app/process', {
+    const route = {
+      dev: '/process',
+      production: 'https://ai-creative-assistant-server.vercel.app/process'
+    }
+
+    const res = await fetch(route.production, {
       method: 'POST',
       body: formData
     })

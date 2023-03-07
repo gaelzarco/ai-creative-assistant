@@ -1,4 +1,4 @@
-from flask import Flask, request, send_from_directory
+from flask import Flask, request, send_file
 from flask_cors import CORS, cross_origin
 from dotenv import load_dotenv
 import openai
@@ -6,6 +6,7 @@ from docx import Document
 from docx.shared import Inches
 import json
 import os
+import io
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -84,10 +85,10 @@ def download():
     header = section.header
     paragraph = header.paragraphs[0]
     run = paragraph.add_run()
-    run.add_picture('./assets/OmniLogo.png', width=Inches(1))
+    run.add_picture('../assets/OmniLogo.png', width=Inches(1))
 
     document.add_heading('AI-Creative Assistant Brief', 0)
-    document.add_picture('./assets/briefoLogo.png', width=Inches(2))
+    document.add_picture('../assets/briefoLogo.png', width=Inches(2))
     
     document.add_heading('Background:', level=1)
     document.add_paragraph(background_text)
@@ -101,9 +102,15 @@ def download():
     document.add_heading('Brand Guidelines:', level=1)
     document.add_paragraph(brand_guidelines_text)
 
-    document.save('output.docx')
+    file_stream = io.BytesIO()
+
+    document.save(file_stream)
+    file_stream.seek(0)
+
+    print(file_stream)
 
     try:
-        return send_from_directory('./', 'output.docx', as_attachment=True)
+        return send_file(file_stream, as_attachment=True, download_name='brief.docx')
     except Exception as e:
+        print(e)
         return str(e)

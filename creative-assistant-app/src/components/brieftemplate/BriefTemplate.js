@@ -31,7 +31,12 @@ const BriefTemplate = ({ props }) => {
     formData.append('target_audience', input.targetAudienceInput)
     formData.append('brand_guidelines', input.brandGuidelinesInput)
 
-    const res = await fetch('https://ai-creative-assistant-server.vercel.app/download', {
+    const route = {
+      dev: '/download',
+      production: 'https://ai-creative-assistant-server.vercel.app/download'
+    }
+
+    const res = await fetch(route.production, {
       method: 'POST',
       body: formData
     })
