@@ -85,10 +85,10 @@ def download():
     header = section.header
     paragraph = header.paragraphs[0]
     run = paragraph.add_run()
-    run.add_picture('../assets/OmniLogo.png', width=Inches(1))
+    run.add_picture('./assets/OmniLogo.png', width=Inches(1))
 
     document.add_heading('AI-Creative Assistant Brief', 0)
-    document.add_picture('../assets/briefoLogo.png', width=Inches(2))
+    document.add_picture('./assets/briefoLogo.png', width=Inches(2))
     
     document.add_heading('Background:', level=1)
     document.add_paragraph(background_text)

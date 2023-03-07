@@ -25,7 +25,7 @@ const BriefForm = () => {
 
     const route = {
       dev: '/process',
-      production: 'https://ai-creative-assistant-server.vercel.app/process'
+      production: 'https://ai-creative-assistant-server-git-fullstack-gaelzarco.vercel.app/process'
     }
 
     const res = await fetch(route.production, {
