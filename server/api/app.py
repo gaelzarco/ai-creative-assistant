@@ -19,7 +19,8 @@ openai.api_key = os.environ.get('OAI_SECRET_KEY')
 @app.route('/', methods=['GET'])
 @cross_origin()
 def hello():
-    return '<h1>API</h1>'
+    assetsDir = os.path.join(os.path.dirname(__file__), 'assets')
+    return f'<h1>{assetsDir}</h1>'
 
 @app.route('/process', methods=['POST'])
 @cross_origin()
