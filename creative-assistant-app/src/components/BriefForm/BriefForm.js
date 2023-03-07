@@ -42,14 +42,14 @@ const BriefForm = () => {
   return (
     <>
       <form className='form-container' onSubmit={handleSubmit}>
-        <label htmlFor="briefContext">Write a paragraph describing your campaign</label>
+        <label htmlFor="briefContext">Write a paragraph describing your company from a marketing standpoint</label>
         <textarea
           name="briefContext"
           id="briefContext"
           cols="30"
           rows="10"
           onChange={(e)=> setFormInput({ text: e.target.value }) }
-          placeholder="The name of our company is [company name] and it specializes in [product industry]."
+          placeholder="At BlueShoes company, we are passionate about crafting high-quality footwear that not only looks great but also feels comfortable to wear. We specialize in designing shoes for a variety of occasions, from everyday wear to special events. Our team of skilled craftsmen uses only the finest materials to create footwear that is both durable and stylish."
         />
           <Button align={{alignSelf: 'center'}} type='submit'>
             Create Brief Template

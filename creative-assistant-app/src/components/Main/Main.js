@@ -41,11 +41,6 @@ const saveData = () =>{
           <SecondaryTittle text='How it works'/>
           <div className="instructions-container">
             <div className="instruction-card">
-              <FontAwesomeIcon icon={faArchive} style={{color: '#ac5eec'}} />
-                <h3>Choose sections for template</h3>
-                <p>Choose the neccessary sections that you would like to include in your template</p>
-              </div>
-            <div className="instruction-card">
                 <FontAwesomeIcon icon={faHandPaper} style={{color: '#ac5eec'}} />
                 <h3>Provide information</h3>
                 <p>Provide a summary of your brief, keeping in mind that the more contextual information you provide, the better the output will be.</p>
