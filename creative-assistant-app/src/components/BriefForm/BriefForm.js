@@ -20,11 +20,8 @@ const BriefForm = () => {
     e.preventDefault()
     setLoader(true)
 
-    console.log(loader)
-
     let formData = new FormData()
     formData.append('user_text', formInput.text)
-    console.log(formData)
 
     const res = await fetch('https://ai-creative-assistant-server.vercel.app/process', {
       method: 'POST',

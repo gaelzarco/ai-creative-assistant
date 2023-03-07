@@ -30,7 +30,6 @@ const BriefTemplate = ({ props }) => {
     formData.append('objective', input.objectiveInput)
     formData.append('target_audience', input.targetAudienceInput)
     formData.append('brand_guidelines', input.brandGuidelinesInput)
-    console.log(formData)
 
     const res = await fetch('https://ai-creative-assistant-server.vercel.app/download', {
       method: 'POST',
@@ -38,7 +37,6 @@ const BriefTemplate = ({ props }) => {
     })
 
     try {
-      // Will research to explain to the best of my abilities
       // https://stackoverflow.com/questions/63942715/how-to-download-a-readablestream-on-the-browser-that-has-been-returned-from-fetc
       const blob = await res.blob()
       const newBlob = new Blob([blob])
