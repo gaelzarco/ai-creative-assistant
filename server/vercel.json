@@ -10,8 +10,5 @@
             "src": "/(.*)",
             "dest": "api/app.py"
         }
-    ],
-    "files": [
-        "api/assets/**"
     ]
 }
