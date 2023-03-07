@@ -19,8 +19,7 @@ openai.api_key = os.environ.get('OAI_SECRET_KEY')
 @app.route('/', methods=['GET'])
 @cross_origin()
 def hello():
-    assetsDir = os.path.join(os.path.dirname(__file__), 'assets')
-    return f'<h1>{assetsDir}</h1>'
+    return f'<h1>Welcome to the Briefo API</h1>'
 
 @app.route('/process', methods=['POST'])
 @cross_origin()
@@ -78,6 +77,11 @@ def download():
 
     document = Document()
 
+    # Attempting to addess Vercel deployment issues
+    assets_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets')
+    omni_image_path = os.path.join(assets_folder, 'OmniLogo.png')
+    briefo_image_path = os.path.join(assets_folder, 'briefoLogo.png')
+
     style = document.styles['Normal']
     style.font.name='Calibri'
 
@@ -86,10 +90,11 @@ def download():
     header = section.header
     paragraph = header.paragraphs[0]
     run = paragraph.add_run()
-    run.add_picture('./assets/OmniLogo.png', width=Inches(1))
+
+    run.add_picture(omni_image_path, width=Inches(1))
 
     document.add_heading('AI-Creative Assistant Brief', 0)
-    document.add_picture('./assets/briefoLogo.png', width=Inches(2))
+    document.add_picture(briefo_image_path, width=Inches(2))
     
     document.add_heading('Background:', level=1)
     document.add_paragraph(background_text)
