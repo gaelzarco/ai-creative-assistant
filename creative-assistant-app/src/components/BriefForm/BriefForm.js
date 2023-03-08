@@ -54,7 +54,7 @@ const BriefForm = () => {
           cols="30"
           rows="10"
           onChange={(e)=> setFormInput({ text: e.target.value }) }
-          placeholder="At BlueShoes company, we are passionate about crafting high-quality footwear that not only looks great but also feels comfortable to wear. We specialize in designing shoes for a variety of occasions, from everyday wear to special events. Our team of skilled craftsmen uses only the finest materials to create footwear that is both durable and stylish."
+          placeholder="At BlueShoes company, we are passionate about crafting high-quality footwear that not only looks great, but also feels comfortable to wear. We specialize in designing shoes for a variety of occasions, from everyday wear to special events. Our team of skilled craftsmen use only the finest materials to create footwear that is both durable and stylish."
         />
           <Button align={{alignSelf: 'center'}} type='submit'>
             Create Brief Template

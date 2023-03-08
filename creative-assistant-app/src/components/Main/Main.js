@@ -63,7 +63,7 @@ const saveData = () =>{
             <BriefForm  saveData={saveData} captureVariables={captureVariables}/>
           </div>
           <div className="right-content">
-            <img src={graphicElement}  alt="Brief document" />
+            <img src={graphicElement} alt="Brief document" />
           </div>
         </div>
     </main>
