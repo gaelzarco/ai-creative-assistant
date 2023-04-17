@@ -7,6 +7,8 @@ OpenAI ✧ LabLabAI |![GitHub contributors](https://img.shields.io/github/contri
 :-:|:-:|:-:|:-:
 
  </div>
+ 
+<div align="center">
 
 ## AI Creative Assistant
 Streamline the process of creating comprehensive briefs for your agency using powerful AI technologies 📃
@@ -42,3 +44,5 @@ Streamline the process of creating comprehensive briefs for your agency using po
 #### Roadmap
 
 Allow users to upload an image of company logo and attach it to brief.
+
+</div>
