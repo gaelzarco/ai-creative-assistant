@@ -22,13 +22,6 @@ Streamline the process of creating comprehensive briefs for your agency using po
 
 [Youtube Video](https://www.youtube.com/watch?v=zP22qaE0Rd0)
 
-## Acknowledgements
-
-[Readme](https://readme.so/editor)
- 
-[Shields](https://shields.io/)
-
-
 ## Authors
 
 [Gael Zarco](https://github.com/gaelzarco)
