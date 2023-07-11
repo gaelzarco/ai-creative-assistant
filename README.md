@@ -18,12 +18,19 @@ Streamline the process of creating comprehensive briefs for your agency using po
  ## Features
 
 React SPA
+
 Flask REST API
+
 OpenAI's GPT-3 model integration
+
 Optimized GPT-3 querying
+
 Text to PDF conversion
+
 Downloadable, dyanamic PDFs
+
 Loading-UI
+
 [Presentation video](https://www.youtube.com/watch?v=zP22qaE0Rd0)
   
 
