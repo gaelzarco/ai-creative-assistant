@@ -14,21 +14,18 @@ OpenAI ✧ LabLabAI |![GitHub contributors](https://img.shields.io/github/contri
 Streamline the process of creating comprehensive briefs for your agency using powerful AI technologies 📃
 
 [Briefo](https://ai-creative-assistant-git-fullstack-gaelzarco.vercel.app/)
-
-<div align='left'>
  
  ## Features
 
-- React SPA
-- Flask REST API
-- OpenAI's GPT-3 model integration
-- Optimized GPT-3 querying
-- Text to PDF conversion
-- Downloadable PDFs
-- Loading-UI
-- [Presentation video](https://www.youtube.com/watch?v=zP22qaE0Rd0)
+React SPA
+Flask REST API
+OpenAI's GPT-3 model integration
+Optimized GPT-3 querying
+Text to PDF conversion
+Downloadable, dyanamic PDFs
+Loading-UI
+[Presentation video](https://www.youtube.com/watch?v=zP22qaE0Rd0)
   
-</div>
 
 ## Presentation
 
