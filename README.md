@@ -7,15 +7,14 @@ OpenAI ✧ LabLabAI |![GitHub contributors](https://img.shields.io/github/contri
 :-:|:-:|:-:|:-:
 
  </div>
- 
-<div align="center">
+
 
 ## AI Creative Assistant
-Streamline the process of creating comprehensive briefs for your agency using powerful AI technologies 📃
+Streamline the process of creating comprehensive briefs for your agency using powerful AI technologies
 
 [Briefo](https://ai-creative-assistant-git-fullstack-gaelzarco.vercel.app/)
  
- ## Features
+ ## Overview
 
 React SPA
 
@@ -23,20 +22,11 @@ Flask REST API
 
 OpenAI's GPT-3 model integration
 
-Optimized GPT-3 querying
-
 Text to PDF conversion
 
 Downloadable, dyanamic PDFs
 
 Loading-UI
-
-[Presentation video](https://www.youtube.com/watch?v=zP22qaE0Rd0)
-  
-
-## Presentation
-
-[Youtube Video](https://www.youtube.com/watch?v=zP22qaE0Rd0)
 
 ## Authors
 
@@ -53,5 +43,3 @@ Loading-UI
 #### Roadmap
 
 Allow users to upload an image of company logo and attach it to brief.
-
-</div>
