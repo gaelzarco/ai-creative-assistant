@@ -3,7 +3,7 @@
  
 ![Logo](https://readmeimg.s3.us-west-2.amazonaws.com/stackhack.png)
 
-OpenAI ✧ LabLabAI |![GitHub contributors](https://img.shields.io/github/contributors/gaelzarco/ai-hackathon?style=for-the-badge) | ![GitHub forks](https://img.shields.io/github/forks/gaelzarco/ai-hackathon?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/gaelzarco/ai-hackathon?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/gaelzarco/ai-hackathon?style=for-the-badge)
 
  </div>
 
