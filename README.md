@@ -13,7 +13,7 @@ Streamline the process of creating comprehensive briefs for your agency using po
 
 [Briefo](https://ai-creative-assistant-git-fullstack-gaelzarco.vercel.app/)
  
- ## Overview
+## Overview
 
 React SPA
 
@@ -38,7 +38,3 @@ Loading-UI
 [Mateen Ali Hashmi](https://github.com/mateen1993)
 
 [Obidoyin Obaloluwa](https://github.com/obaloluwaobi)
-
-#### Roadmap
-
-Allow users to upload an image of company logo and attach it to brief.
